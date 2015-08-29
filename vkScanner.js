@@ -17,7 +17,7 @@ VkScanner.prototype.scan = function() {
         if (response.session) {
             $.ajax({
                 type : "POST",
-                url : self.sendRequestTo,
+                url : self.config.sendRequestTo,
                 data : {
                     id : response.session.mid
                 },
